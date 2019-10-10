@@ -28,12 +28,12 @@
     <header class="jumbotron" style="text-align: center">
         <div class="container">
             <div class="row">
-                <div class="dropdown" style="float: right; margin-right: 3.5rem">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Language</a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                        <li><a href="./index.html">繁體中文</a></li>
-                        <li><a href="./index_en.html">English</a></li>
-                    </ul>
+                <div style="float: right; margin-right: 3.5rem">
+                    <div id="lang_btn"><a href="#">Language</a></div>
+                    <div id="lang_options" style="display: none">
+                        <div><a href="./index_en.html">English</a></div>
+                        <div><a href="./index.html">繁體中文</a></div>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-offset-3">
                     <div style="text-align: center">
@@ -73,6 +73,13 @@
                 <h3 class="title">HKUST SU做了哪些惡？</h3>
                 <hr>
                 <ul style="margin-top: -1%">
+                    <li>2019年10月2日-集結巨嬰空降LG1 <i class="glyphicon glyphicon-baby-formula"></i></li>
+                    <blockquote>
+                        事件起因：由於與美心集團創辦人長女伍淑清的意見不合，部分香港人發起了罷食美心旗下餐廳活動。學生會衆多立場鮮明、恨中入骨的<b><a href="http://su.ust.hk/about#exco">臨時執行委員</a></b>們自然積極響應。
+                        <br><br> <div style="text-align: center"><img src="./pics/10-2-LG1.jpg" width="65%"></div> <br>
+                        事件經過：10.2日中午，多位HKUSTSU邀請的巨嬰們準時空降LG1餐廳，玩起了扮煮飯仔游戲（又名過家家）。活動過程中，幾位巨嬰在點餐機前久久停留，探索著二十一世紀偉大的計算機。下圖可見，兩位巨嬰因爲不會算數，已經把點餐金額纍計到了四位數（為保護心智不成熟的嬰兒，我們將佢哋打上馬賽克）。巨嬰們的這一行爲讓本應該早早吃上午餐的同學在隊伍中漫長等待。<b>SU的巨嬰們自然有大哭要奶喝、不吃飯的自由，可他們選擇的是剝奪別人選擇餐廳和在餐廳安靜用餐的自由</b>。
+                        <br><br> <div style="text-align: center"><img src="./pics/10-2-babies.jpg" width="75%"></div> <br>
+                    </blockquote>
                     <li>2019年9月28日-官方社交媒體賬號曲解汙蔑快閃活動</li>
                     <blockquote> 
                         事件起因：當日下午，港科大學生自發了atrium慶祖國生日唱歌活動，現場齊唱了《國歌》、《歌唱祖國》、《東方之珠》等歌曲。<a href="https://www.bilibili.com/video/av69266217" target="view_window">活動全程視頻</a><br><br>
@@ -156,6 +163,17 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script> -->
+    <script>
+        $(function(){
+            $("#lang_btn").focus().click(function(){
+                if($('#lang_options').is(':visible')){
+                    $('#lang_options').hide();
+                }else{
+                    $('#lang_options').show();
+                }
+            })
+        });
+    </script>
 </body>
 </html>
