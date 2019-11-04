@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SU != me</title>
+    <link rel="shortcut icon" href="./pics/web_icon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        .title {
+            margin-bottom: -2%;
+            /*margin-top: -3%;*/
+        }
+        .text{
+            margin-top: -1%;
+            margin-bottom: +1%;
+
+        }
+        blockquote{
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="jumbotron" style="text-align: center">
+        <div class="container">
+            <div class="row">
+                <div style="float: right; margin-right: 3.5rem">
+                    <div id="lang_btn"><a href="#">Language</a></div>
+                    <div id="lang_options" style="display: none">
+                        <div><a href="./index_en.html">English</a></div>
+                        <div><a href="./index.html">繁體中文</a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-offset-3">
+                    <div style="text-align: center">
+                        <img src="./pics/suisnotme_logo.png"  width="100%">
+                        <b><a href="./index.html">Back to homepage</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="about">
+        <div class="col-xs-12 col-sm-6 col-md-offset-3" >
+            <h2 class="title">A Sample of the Letter of Complaint</h2>
+            <hr>
+            <p>收件人：<a href="Mailto:trevorwebb@ust.hk">trevorwebb@ust.hk</a></p>
+            <p>投訴信時間限制：11月5日前</p>
+            <div id="complete">
+                <h3 class="title">Complete Version</h3>
+                <hr>
+                <p class="text">Dear Dr. WEBB, </p>
+                <p>Candidates Ms. Fu Puiying, who is the Executive Committee Member of the HKUST’s Student Unions, did co-op with student leaders in dormitories (mainly from Hall 3) to stand near the voting point and grab students to vote for her. They did this on the last day of the election and unlawfully campaigned in the area between ARO and the Tang Shiu Kin Computational Laboratory.</p>
+                <p>In the video (i.e., Appendix 1), you can see the man with the “blue hair” was doing the campaign for Ms. Fu Puiying, who is the lady with a cloth in navy blue. Later on, you can see the photo (i.e., Appendix 2), which shows that Ms. Fu and the blue hair grab students near the prohibited zone and forced them to vote for Ms. Fu. Since the area between ARO and the Tang Shiu Kin Computational Laboratory is prohibited by taking photos and video, only the entrance photo is provided. </p>
+                <p>The blue hair was identified as the Execution Committee member of Hall 3 by the video (i.e., Appendix 3) and the photo (i.e., Appendix 4) on the day of blocking the LG1 restaurant. </p>
+                <p>Best Regards,</p>
+                <div style="text-align: center">
+                    <p>Appendix 1</p>
+                    <video width="320" height="480" controls>
+                            <source src="./pics/email_1.mp4" type="video/mp4">
+                    </video>
+                    <p>Appendix 2</p>
+                    <img src="./pics/email_2.jpg" style="width:50%;">
+                    <p>Appendix 3</p>
+                    <video width="480" height="280" controls>
+                            <source src="./pics/email_3.mp4" type="video/mp4">
+                    </video>
+                    <p>Appendix 4</p>
+                    <img src="./pics/email_4.jpg" style="width:80%;">
+                </div>
+
+
+            </div>                              
+
+            <div id="simple">
+                <h3 class="title">Simplified Version</h3>
+                <hr>
+                <p class="text">Dear Dr. WEBB, </p>
+                <p>Candidates Ms. Fu Puiying, who is the Executive Committee Member of the HKUST’s Student Unions, did co-op with student leaders in dormitories (mainly from Hall 3) to stand near the voting point and grab students to vote for her. They did this on the last day of the election and unlawfully campaigned in the area between ARO and the Tang Shiu Kin Computational Laboratory.</p>
+                <p>Best Regards,</p>  
+            </div>
+
+            <br><br>
+            <p style="text-align: center">此網頁有底綫，HKUSTSU無</p>
+            <hr>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script> -->
+    <script>
+        $(function(){
+	        $("#lang_btn").focus().click(function(){
+                if($('#lang_options').is(':visible')){
+                    $('#lang_options').hide();
+                }else{
+                    $('#lang_options').show();
+                }
+            })
+        });
+    </script>
+</body>
+</html>
